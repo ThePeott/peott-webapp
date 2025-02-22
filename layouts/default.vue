@@ -1,6 +1,6 @@
 <script setup>
-import HeadP from '~/layouts/FootP.vue'
-import FootP from '~/layouts/HeadP.vue'
+import HeadP from '~/layouts/HeadP.vue'
+import FootP from '~/layouts/FootP.vue'
 </script>
 
 <template>
