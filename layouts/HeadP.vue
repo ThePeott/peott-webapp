@@ -23,8 +23,8 @@
 }
 
 .special-subscription {
-    background-color: #dcdcdc;
-    border-radius: 25%;
+    background-color: #ededed;
+    border-radius: 50%;
     padding: 4px;
 }
 
@@ -36,9 +36,8 @@
 }
 
 .settings {
-    background-color: #dcdcdc;
-    text-align: center;
-    border-radius: 25%;
+    background-color: #ededed;
+    border-radius: 50%;
     padding: 4px;
 }
 

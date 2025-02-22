@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #000;
     border-radius: 10px;
     margin: 20px;
     overflow: hidden;
@@ -32,5 +32,6 @@
     font-weight: 600;
     font-style: italic;
     padding-bottom: 4px;
+    color: #f5f5f5;
 }
 </style>

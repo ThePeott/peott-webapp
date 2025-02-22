@@ -1,51 +1,43 @@
-<script setup>
-const memberCount = ref(200);
-</script>
-
 <template>
-    <div class="team-sec-container">
-        <div class="team-sec-banner">
-            <img src="https://wwlolbcglcfhquyeenkn.supabase.co/storage/v1/object/public/public_assets/ThePeott.png" alt="">
-        </div>
-        <div class="team-sec-details">
-            <h1>TeamName</h1>
-            <p id="team-sec-memeber-count">{{ memberCount }} members</p>
-        </div>
+    <div class="team-sec">
+        <h1>TeamName</h1>
+        <p>{{ memberCount }} members</p>
     </div>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+const memberCount = ref(200)
+</script>
+
 <style scoped>
-.team-sec-container {
+.team-sec {
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.9), transparent), 
+                url("https://wwlolbcglcfhquyeenkn.supabase.co/storage/v1/object/public/public_assets/ThePeott.png") center/cover;
     border-radius: 10px;
     margin: 20px;
-    overflow: hidden;
+    height: 120px;
+    padding: 16px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.team-sec-banner img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;  
-}
 
-.team-sec-details {
-    padding: 20px;
-}
-
-.team-sec-details h1 {
-    font-size: 1.6rem;
+.team-sec h1 {
+    font-size: 1.4rem;
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    padding-bottom: 4px;
 }
 
-.team-sec-details p {
-    font-size: 0.8rem;
+.team-sec p {
+    font-size: 0.7rem;
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
     font-weight: 600;
