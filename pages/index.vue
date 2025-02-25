@@ -7,7 +7,9 @@ const hasTeam = ref(false);
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+    <div>
+        <TeamSec v-if="hasTeam"/>
+        <NoTeam v-else />
+        <Coin enable="true"/>
+    </div>
 </template>

@@ -27,7 +27,6 @@ const memberCount = ref(200)
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .team-sec h1 {
     font-size: 1.4rem;
     font-family: "Rubik", serif;
