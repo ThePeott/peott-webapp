@@ -3,13 +3,13 @@ import NoTeam from '~/components/Team/NoTeam.vue';
 import TeamSec from '~/components/Team/TeamSec.vue';
 import Coin from '~/components/Coin/Coin.vue';
 
-const hasTeam = ref(false);
+const hasTeam = ref(true);
 </script>
 
 <template>
-    <div>
+    <div class="container">
         <TeamSec v-if="hasTeam"/>
         <NoTeam v-else />
-        <Coin enable="true"/>
+        <Coin enable/>
     </div>
 </template>
