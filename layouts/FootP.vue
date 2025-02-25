@@ -22,6 +22,7 @@
     position: fixed;
     bottom: 0;
     width: 100%; height: auto;
+    background-color: rgb(50, 0, 100);
     box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
 } 
 
@@ -48,11 +49,12 @@
 
 .nav-item :deep(a) {
     text-decoration: none;
-    color: #000;
+    color: rgb(230, 200, 255);
 }
 
 .nav-item :deep(i) {
     font-size: 1.1rem;
     margin-bottom: 0.1rem;
+    color: rgb(230, 200, 255);
 }
 </style>

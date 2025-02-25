@@ -8,4 +8,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(127,0,212);
+    background: radial-gradient(circle, rgba(127,0,212,1) 0%, rgba(98,0,164,1) 57%, rgba(67,0,112,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
 }
