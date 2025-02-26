@@ -78,7 +78,8 @@ onMounted(() => {
   <div class="coin-energy-balance-container">
     <div class="balance-indicator">
       <div class="balance-container">
-        <i class="bi bi-coin"></i>
+        <!-- <i class="bi bi-coin"></i> -->
+         <Coin :width="30" :height="30"/>
         <h1>{{ coins }}</h1>
       </div>
     </div>
