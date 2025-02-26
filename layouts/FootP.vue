@@ -6,7 +6,7 @@
                 <NuxtLink to="#">Home</NuxtLink>
             </div>
             <div class="nav-item">
-                <i class="bi bi-coin"></i>
+                <img src="~/assets/img/coin-icon.svg" />
                 <NuxtLink to="#">Earn</NuxtLink>
             </div>
             <div class="nav-item">
@@ -54,6 +54,12 @@
 
 .nav-item :deep(i) {
     font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+    color: rgb(230, 200, 255);
+}
+
+.nav-item :deep(img) {
+    width: 21px;
     margin-bottom: 0.1rem;
     color: rgb(230, 200, 255);
 }
