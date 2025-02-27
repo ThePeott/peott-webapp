@@ -32,6 +32,5 @@
     font-weight: 600;
     font-style: italic;
     padding-bottom: 4px;
-    color: #f5f5f5;
 }
 </style>

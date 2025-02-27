@@ -1,17 +1,26 @@
+<script setup lang="ts">
+const router = useRouter();
+
+const redirector = (path: string) => {
+    router.push(`/${path}`);
+    console.log(`Redirected to ${path}`)
+}
+</script>
+
 <template>
     <div class="foot-navigator-container">
         <div class="foot-navigator">
-            <div class="nav-item">
+            <div class="nav-item" id="home" @click="redirector('')">
                 <i class="bi bi-house"></i>
-                <NuxtLink to="#">Home</NuxtLink>
+                <p>Home</p>
             </div>
-            <div class="nav-item">
-                <img src="~/assets/img/coin-icon.svg" />
-                <NuxtLink to="#">Earn</NuxtLink>
+            <div class="nav-item" id="earn" @click="redirector('earn')">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <p>Earn</p>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" id="frens" @click="redirector('frens')">
                 <i class="bi bi-people"></i>
-                <NuxtLink to="#">Frens</NuxtLink>
+                <p>Frens</p>
             </div>
         </div>
     </div>
@@ -22,8 +31,8 @@
     position: fixed;
     bottom: 0;
     width: 100%; height: auto;
-    background-color: rgb(50, 0, 100);
-    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
+    /* background-color: #03346E; */
+    background-color: var(--bg-secondary);
 } 
 
 .foot-navigator {
@@ -47,20 +56,29 @@
     font-style: normal;
 }   
 
+.nav-item :deep(a),
+.nav-item :deep(i),
+.nav-item :deep(svg) {
+    color: var(--text-color);
+    fill: var(--text-color);
+    /* cursor: default; */
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
 .nav-item :deep(a) {
     text-decoration: none;
-    color: rgb(230, 200, 255);
 }
 
 .nav-item :deep(i) {
     font-size: 1.1rem;
     margin-bottom: 0.1rem;
-    color: rgb(230, 200, 255);
 }
 
-.nav-item :deep(img) {
-    width: 21px;
+.nav-item :deep(svg) {
+    width: 20px;
     margin-bottom: 0.1rem;
-    color: rgb(230, 200, 255);
 }
 </style>

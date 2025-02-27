@@ -16,15 +16,16 @@ const memberCount = ref(200)
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.9), transparent), 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), 
                 url("https://wwlolbcglcfhquyeenkn.supabase.co/storage/v1/object/public/public_assets/ThePeott.png") center/cover;
     border-radius: 10px;
     margin: 20px;
     height: 120px;
     padding: 16px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3),
+              4px 0 10px rgba(255, 255, 255, 0.3),
+              0 -4px 10px rgba(255, 255, 255, 0.3),
+              -4px 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .team-sec h1 {

@@ -80,7 +80,7 @@ onMounted(() => {
       <div class="balance-container">
         <!-- <i class="bi bi-coin"></i> -->
          <Coin :width="30" :height="30"/>
-        <h1>{{ coins }}</h1>
+        <h1>{{ coins.toLocaleString("en-US") }}</h1>
       </div>
     </div>
     <div class="container-coin-energy">
@@ -135,7 +135,6 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: rgb(230, 200, 255);
 }
 
 .balance-container i {
@@ -232,7 +231,7 @@ onMounted(() => {
 }
 
 .energy-indicator {
-  background-color: rgb(50, 0, 100);
+  background-color: var(--primary-color);
   width: 100%;
   border-radius: 15px;
   height: 12rem;
@@ -244,7 +243,7 @@ onMounted(() => {
 }
 
 .energy-indicator .energy-bar {
-  background-color: rgb(230, 200, 255);;
+  background-color: var(--primary-hover);
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -252,18 +251,17 @@ onMounted(() => {
 }
 
 .energy-indicator span {
-  position: absolute;
-  writing-mode: vertical-rl;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  transform: rotate(180deg);
-  color: rgb(127,0,212);
-  font-family: "SF Pro Display", "Rubik", sans-serif;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(180deg);
+    font-family: "SF Pro Display", "Rubik", sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 </style>

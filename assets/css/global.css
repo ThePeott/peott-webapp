@@ -10,13 +10,108 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* 
+body {
+    background: rgb(23, 21, 59);
+}
+
+.text-primary {
+    color: #433D8B;
+}
+
+.text-secondary {
+    color: #C8ACD6;
+}
+
+.bg {
+    background-color: #17153B;
+    background-size: cover;
+}
+
+.bg-primary {
+    background-color: #2E236C;
+    background-size: cover;
+} */
+
+/* Global Dark Purple Theme */
+
+:root {
+    --bg-color: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-color: #e0e0e0;
+    --text-muted: #a29bfe;
+    --primary-color: #6a0dad;
+    --primary-hover: #8a2be2;
+    --border-color: #333;
+    --shadow-color: rgba(0, 0, 0, 0.6);
+}
 
 body {
-    background: rgb(127,0,212);
-    background: radial-gradient(circle, rgba(127,0,212,1) 0%, rgba(98,0,164,1) 57%, rgba(67,0,112,1) 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+input, textarea, select {
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-hover);
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.navbar {
+  background-color: var(--bg-secondary);
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: var(--text-color);
+  margin-right: 15px;
+}
+
+.navbar a:hover {
+  color: var(--primary-hover);
 }
